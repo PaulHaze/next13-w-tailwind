@@ -1,10 +1,14 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from 'next/image';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="bg-blue-100">
       <main className={styles.main}>
+        <div className="flex">
+          <h1 className="flex-grow bb">t</h1>
+          <h1 className="bb">t</h1>
+        </div>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js 13!</a>
         </h1>
@@ -13,6 +17,8 @@ export default function Home() {
           Get started by editing{' '}
           <code className={styles.code}>app/page.tsx</code>
         </p>
+
+        <p className="text-xl">Test tw</p>
 
         <div className={styles.grid}>
           <a href="https://beta.nextjs.org/docs" className={styles.card}>
@@ -53,5 +59,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  );
 }
